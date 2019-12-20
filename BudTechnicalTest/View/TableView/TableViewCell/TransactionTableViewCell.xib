@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionTableViewCell" customModule="BudTechnicalTest" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TransactionTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionTableViewCell" rowHeight="48" id="KGk-i7-Jjw" customClass="TransactionTableViewCell" customModule="BudTechnicalTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6eV-s3-A72">
+                        <rect key="frame" x="16" y="16.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="HFc-AE-FZE"/>
+                            <constraint firstAttribute="width" constant="50" id="HRz-5k-wRB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOT-TO-SOF">
+                        <rect key="frame" x="82" y="16.5" width="323.5" height="21"/>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIQ-8y-AHI">
+                        <rect key="frame" x="82" y="39.5" width="66.5" height="20"/>
+                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="value" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ls-09-2m5">
+                        <rect key="frame" x="413.5" y="16.5" width="45.5" height="21"/>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xOT-TO-SOF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="13F-ni-NJA"/>
+                    <constraint firstItem="6eV-s3-A72" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="HkC-Hl-ONO"/>
+                    <constraint firstItem="5Ls-09-2m5" firstAttribute="leading" secondItem="xOT-TO-SOF" secondAttribute="trailing" constant="8" id="Nkf-7p-hFR"/>
+                    <constraint firstItem="6eV-s3-A72" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="On9-07-2ZM"/>
+                    <constraint firstAttribute="trailing" secondItem="5Ls-09-2m5" secondAttribute="trailing" constant="8" id="SGV-ga-J0x"/>
+                    <constraint firstItem="6eV-s3-A72" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bX2-3I-wSJ"/>
+                    <constraint firstItem="xOT-TO-SOF" firstAttribute="leading" secondItem="6eV-s3-A72" secondAttribute="trailing" constant="16" id="hd5-D8-75c"/>
+                    <constraint firstItem="lIQ-8y-AHI" firstAttribute="leading" secondItem="6eV-s3-A72" secondAttribute="trailing" constant="16" id="meo-zX-PRN"/>
+                    <constraint firstItem="5Ls-09-2m5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="nz9-4M-Dfe"/>
+                    <constraint firstItem="lIQ-8y-AHI" firstAttribute="top" secondItem="xOT-TO-SOF" secondAttribute="bottom" constant="2" id="w5o-tT-DEg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="transactionCategory" destination="lIQ-8y-AHI" id="pIx-9O-4an"/>
+                <outlet property="transactionDescription" destination="xOT-TO-SOF" id="Daf-K3-9nq"/>
+                <outlet property="transactionIcon" destination="6eV-s3-A72" id="oSN-jy-Vdd"/>
+                <outlet property="transactionValue" destination="5Ls-09-2m5" id="xfg-on-hVm"/>
+            </connections>
+            <point key="canvasLocation" x="225.36231884057972" y="62.946428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
